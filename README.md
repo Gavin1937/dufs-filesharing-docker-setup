@@ -7,7 +7,7 @@
 
 ## usage
 
-First time setup, run following script:
+First time setup, run following script, and follow the instructions:
 
 ```sh
 bash ubuntu-setup.sh

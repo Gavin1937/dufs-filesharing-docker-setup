@@ -6,7 +6,7 @@ import string
 
 print('Setup dufs app port')
 port = input ('Enter app port: ')
-print('Setup dufs user. (leave them empty will use a random username / password)')
+print('Setup dufs user. (leave them empty to use a random username & password)')
 username = input('Enter an username: ')
 password = input('Enter a password: ')
 

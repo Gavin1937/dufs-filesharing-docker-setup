@@ -1,5 +1,5 @@
 
-# setup scripts for sigoden/dufs (a file sharing server with docker)
+# setup scripts for [sigoden/dufs](https://github.com/sigoden/dufs) (a file sharing server with docker)
 
 ## supported os
 

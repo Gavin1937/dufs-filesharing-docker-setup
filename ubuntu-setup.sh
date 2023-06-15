@@ -14,11 +14,11 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt update -y ; sudo apt upgrade -y ;
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # setup dufs
 sudo docker pull sigoden/dufs
-python config-setup.py
+$(whereis python | cut -d' ' -f2) config-setup.py
 
 # run dufs
 bash ubuntu-run-dufs.sh

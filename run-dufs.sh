@@ -6,7 +6,9 @@ MOUNT_DIR="$SCRIPT_DIR/data"
 
 if [ $# -ge 1 ]
 then MOUNT_DIR=$(python -c "from os.path import abspath; print(abspath('$1'));")
-else MOUNT_DIR="$SCRIPT_DIR/data"
+else
+  MOUNT_DIR="$SCRIPT_DIR/data"
+  mkdir -p "$MOUNT_DIR"
 fi
 
 CONFIG=$(<"$SCRIPT_DIR/config.json")

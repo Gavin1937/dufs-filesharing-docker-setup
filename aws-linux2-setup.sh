@@ -1,11 +1,11 @@
 #! /bin/bash
 
 # general setup
-sudo apt update -y
-sudo apt install -y curl jq python3
+sudo yum update -y
+sudo yum install -y curl jq python3
 
 # setup docker
-SCRIPT_NAME="ubuntu-docker.sh"
+SCRIPT_NAME="aws-linux2-docker.sh"
 curl -s "https://raw.githubusercontent.com/Gavin1937/quick-docker-setup/main/$SCRIPT_NAME" | sudo bash -s
 
 # setup dufs

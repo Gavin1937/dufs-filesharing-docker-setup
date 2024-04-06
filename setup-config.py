@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import os
 import json
 import random
 import string
@@ -32,10 +33,11 @@ print('Your username is:', username)
 print('Your password is:', password)
 print('Container will be run in', 'detached' if detach_mode else 'interactive', 'mode')
 
-with open('config.json', 'w', encoding='utf-8') as file:
+output_path = os.path.join(os.path.dirname(__file__), 'config.json')
+with open(output_path, 'w', encoding='utf-8') as file:
 	json.dump(
 		{'port':port,'username':username,'password':password,'detach':detach_mode},
 		file, indent=2,
 	)
-
+print('Write config file to:', output_path)
 
